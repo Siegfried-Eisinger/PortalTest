@@ -1,0 +1,1070 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><head><link rel="stylesheet" href="great.css" type="text/css"/><title>DNV-RP-0513</title></head><body><h1 id="sectionstart_1B3DB4FC6537416ABD215D0E1F3C55A7">1. General</h1><section><url href="https://groups.dnvgl.com/sites/Rules_and_Standards/Intranet%20Files/Links%20from%20Proposal%20Procedure%20Template/StyleManual.pdf" id="url_51C64B86E8994216B2533B6AAFDFB68D"> Structure and style manual for DNV
+  GL service documents, forms and templates</url>. 
+<h2 id="subsec1_8B411FAEDE8D48189204B9BF2EFA97A3">1.1. Introduction</h2><section><p id="p_E09DA6BCC3F24E4E81C6A9480CD392A7">The adoption of digital technologies
+  is currently picking up speed in all industries and throughout society at
+  large. Assets transform from pure physical assets to also becoming digital
+  assets, either as cyber-physical (mixed) assets or as pure digital assets
+  (purely software-based). For example, modern cars contain more than 100
+  computers and many inter-linked networks. Communication patterns in society are
+  currently undergoing tremendous changes, which will continue into the
+  foreseeable future. These transformations are driven by the opportunities they
+  promise and which often seem needed to manage current challenges. On the other
+  hand the transformations introduce complexities and new risks, which shall
+  be managed to avoid unacceptable side effects, or even malicious activities.
+  As automation and simulation transform the way systems are being designed and
+  operated, they dictate a transformation in also the way we do assurance and
+  generate trust in these systems. This relation is not optional. Recent
+  accidents with partially autonomous vehicles or with new aircraft types
+  demonstrate that assurance of digital assets is a mandate: a
+  fundamental prerequisite to ensure safety and
+  establish trust in new technologies. 
+</p> 
+<p id="p_81454A58F7ED4A688CA8C00E95BA39C1">One important way of analysing
+  complex, digital assets with respect to risks is through simulation models,
+  i.e. capturing the most essential elements of a system and its intended usage,
+  modelling the most important interactions between the elements and thus
+  facilitating better understanding of complexities, identifying and controlling
+  unwanted side effects and optimising the system towards acceptable usage and
+  risk. The definition and introduction of assurance activities to establish
+  trust in simulation models is the objective of this recommended
+  practice
+  (RP). 
+</p> 
+<p id="p_C85E1F79A2D64316A8DDCB65A1C0D361"> A wide variety of simulation models
+  are used for technical and non-technical systems. A few examples illustrate
+  that:
+</p> 
+<ul type="dash" id="unorderedlist_FDA81E6F2F2A41D2BD663013C9C4E98D">
+<li id="listitem_32A70FE59FBF4881BE5C903100B570D5">discrete
+event
+models
+to optimize safety and performance within sectors like transportation, oil and
+gas, process industry and shipping</li>
+<li id="listitem_974676C1C3CE41FEACDEF7E2351DE1FC">process
+models (modelling e.g. fluid flow, temperature and electrical current) to
+design and optimize equipment</li>
+<li id="listitem_5CFA640FEF554BBFB8BDF57ED1F26933">control
+models to develop and test control systems and -strategies at an early stage
+and reduce later integration problems</li>
+<li id="listitem_64955D26B55D412ABD140B9BBA44D7B8">stress/strength
+models to optimise material usage in construction and its structural strength</li>
+<li id="listitem_1FAEF9ED617E4F17B9F02B90C896C455">logistic
+models to optimise schedules and adapt to operational disturbances</li>
+<li id="listitem_FBBC970C1E82413589A0AFC5CAF15F0E">societal
+models to predict e.g. the spread of diseases</li>
+<li id="listitem_9A70A1F52674429DBD1A2961B3879CDC">environmental
+models, ranging from local scale (e.g. iceberg drift or wind turbine usage) to
+global scale in climate change models.</li></ul> 
+<p id="p_54C7BE6CE7D0404382C542871DA20531"> The usage of simulation models is
+  increasing and efforts to combine component models from various vendors into
+  system models are becoming commonplace. These efforts are driven by the need to
+  manage large and complex systems and will increase in the future. Simulation
+  models are also an important ingredient in digital
+  twins.
+  
+</p> 
+<p id="p_C19C0D6F6F1F4300BB2E9906D2D1A316">The relation to relevant DNV
+  documents is explained as part of 
+  <a href="#table_544B52CF28C44A34BEBE1AC6647E8370" id="xref_769C399F25E440489A921FB21B013F1E">Table 1-2</a>. Assurance of
+  simulation models shall also be seen as one example and application of the more
+  general 'Assurance of digital assets', which represents an important research
+  and development effort within DNV. The sections 
+  <a href="#sectionstart_7B1C132A1BB248EEA3985AAB0B8FD3E2" id="xref_C04520F773744307B497D02F975B6D8D">Sec.2</a>, 
+  <a href="#sectionstart_75E7A9C418E1410E989D6588D78CF1A7" id="xref_EB5677950E7A44B283C0D69A0BE69041">Sec.3</a> and 
+  <a href="#sectionstart_792ECD06E40145E88E8C23FE5080082C" id="xref_F084D8B0E1F24293A1F6B237AF46F5D1">Sec.4</a> and the related
+  appendices are built up as follows: 
+</p> 
+<p id="p_045B77C1B79A469897D4952E0D933E12"><a href="#sectionstart_7B1C132A1BB248EEA3985AAB0B8FD3E2" id="xref_A77056D8B5BA47279764570D2E819B63">Sec.2</a> provides a more
+  detailed explanation of the concepts and terminology used throughout the RP. In
+  
+  <a href="#sectionstart_75E7A9C418E1410E989D6588D78CF1A7" id="xref_571AF33A57744E3EA140602A19D90084">Sec.3</a> the actual main
+  assurance activities are outlined, with appendices 
+  <a href="#appendixstart_138846BCEB894DCA85DA1B41D8AE60CF" id="xref_548957C644884F5686DEBAA504E8DB35">App.A</a>, 
+  <a href="#appendixstart_AE42DBC0ED444BD7BA574922DD9096C4" id="xref_B86D8F517A1045B598E7DC67B3C94C38">App.B</a> and 
+  <a href="#appendixstart_D4DDB4070EE7469E81C5968500C896DD" id="xref_0B4C07CFC85549BD95BBDA0802541C66">App.C</a> containing detailed
+  activities and requirements in table form. Finally, 
+  <a href="#sectionstart_792ECD06E40145E88E8C23FE5080082C" id="xref_7DF4EDA288AC401AA4DEA8B5F5E283D7">Sec.4</a> contains additional
+  activities and requirements. These are either providing details for issues
+  addressed in 
+  <a href="#sectionstart_75E7A9C418E1410E989D6588D78CF1A7" id="xref_1EE5A8B82D5D45A4861D55569D542462">Sec.3</a>, or they address issues
+  which are needed for only some simulation modelling types. 
+</p>
+<p id="p_A061AD1C42464F90BD875FDB2AF0EB63">With respect to an overview of the
+  process to assure a simulation model, i.e. 'What exactly should I do?', see 
+  <div href="E5A5EA01CE764BA197F086393F4AFC68" id="xref_4C76FBD3020045118C89AC35B0235EBF">Table 3-1</div>.
+</p></section><h2 id="subsec1_8EBA0D05B2D74C2BB98DD9422FA5874D">1.2. Objective</h2><section><p id="p_5AFBD458B61E42E7BE66A004F7DEF246"> Leveraging simulation models to
+  generate trust in complex systems requires that the simulation model itself can
+  be trusted. The definition and introduction of assurance activities to
+  establish this trust in simulation models is the objective of this recommended
+  practice
+  (RP). In other words, what is necessary in terms of competence and assurance
+  activities so that the risk of misleading simulation model results is minimized
+  to an acceptable level. See also 
+  <i id="i_D55BEBB3420A4895A963CB7F03158F55">Trust-in-AI</i>
+  (see 
+  <a href="#table_544B52CF28C44A34BEBE1AC6647E8370" id="xref_4CB787FF47304BC0847DF4F5BC1B4CA7">Table 1-2</a>),
+  which includes a more detailed definition and discussion of trust. 
+</p> 
+<b id="b_DEFE3B649423423D8CC59FCAA56A0BF6">Mandatory</b> 
+  <ul type="dash" id="unorderedlist_A45AD2E17BB44757AB7C76A07906D060">
+  <li id="listitem_9FA832D8A5CB41FA9687EAFB8F5F3ED5">Short statement of the
+  purpose or objective of the document. </li> 
+  <li id="listitem_F3257F3FC2F341C28F39FC136987816F">Specific result(s)
+  that the document aims to achieve.</li> 
+  <li id="listitem_C3C87DE856244DD884CE3C4400A5AF6B">This shall serve as
+  the basis for why the document was established.</li> </ul> 
+</section><h2 id="subsec1_91AC755CDCC34A5480EFD98680C81903">1.3. Scope</h2><section><p id="p_D6F2DFFB6855434DBCFED292B5AED265">The scope of this RP covers the
+  provision of a framework for assuring simulation models, depending on the risk
+  for misleading simulation results. 
+</p> 
+<p id="p_0C0B882083004E4D94C001C3C49A467B">This RP covers simulation models
+  based on first principles as defined in 
+  <a href="#table_60B7637E7CE34F609CE3872910B8A64C" id="xref_9B0C40110FA14D08BC5E4674C702300D">Table 1-5</a>. Data-driven models
+  are not included in this RP, but in the separate 
+  <a href="#repository_1A262779DFDA4DD5A12DF766DB648993" id="xref_D2239A5D78824C0D92A223AF452864B9">DNVGL-RP-0510</a> <i id="i_885663A60E074A4A9F6B45767ABD6C1C">Framework for assurance of data-driven
+	 algorithms and models</i>.
+</p> 
+<p id="p_A1C3214DD20640FBB6AE648DD818F0B9"> The framework includes the
+  following activities:
+</p> 
+<ol type="number" id="orderedlist_81372AD8E35E4389A9B92B099179F772"> 
+<li id="listitem_8440B22DDDD047D5A5C91F622356DE9C"> Risk evaluation of
+the application of the simulation model and identification of a required
+confidence level from this analysis.</li> 
+<li id="listitem_21CA3ECDC6DC45D6917F984D2FAC1AAD"> Supplier assurance,
+where the maturity level of the model supplier is established and compared with
+the required confidence level. This procedure may
+be called process related.</li> 
+<li id="listitem_E6255BA1C7BB4C85A55B50BDE1F89D59"> Model assurance,
+representing the main assurance activities and advocate product assurance of
+the model itself. Model assurance includes qualification of the conceptual
+model, verification of the simulation model and validation of the simulation
+model towards the reality,
+see
+
+<a href="#figuregroup_A6CB979E50144F83B81E797A8B631A37" id="xref_865581700A6A43A0BB532060E4D1DC16">Figure 2-1</a>.</li></ol>
+
+<p id="p_9F3C8B8650EF4CB0AB601EA4AAFE11BD"> The recommended practice advocates
+  re-use of component models. Such
+  component models should be pre-assured. 
+</p> 
+<b id="b_9CEE780B229E43808A4DC3E19BCC0ED8">Mandatory</b> 
+  <ul type="dash" id="unorderedlist_028BB7268FD74929B5AB41E52282BA79">
+  <li id="listitem_182F55E3A2C547AD81C8E6D69CBFE267"> The subject matter of
+  the document and aspects covered and not covered.</li> 
+  <li id="listitem_F0C44B55A6D443D4941049B2BE999A43">Shall not contain
+  requirements.</li> 
+  <li id="listitem_13E9EC7C5A354643B8C2C10432BD8E9B"> Should be brief and
+  to the point.</li> </ul> 
+</section><h2 id="subsec1_BC01D9D577F0404899A319446C6C5E54">1.4. Application</h2><section><p id="p_ACBABE82EFD04C6DA7DCCABCDE7CB2D8">The recommended practice is intended
+  for all stakeholders involved in the value chain of simulation models. The most
+  important applications per stakeholder are listed in 
+  <a href="#table_0B44614C7D3F40E18C2D1421B2426536" id="xref_96a01150e22b4b54aa5958d40103c212">Table 1-1</a>. 
+</p> 
+<table id="table_0B44614C7D3F40E18C2D1421B2426536" frame="border" rules="all"><caption>Table 1-1 Application of the
+  recommended practice per type of stakeholder</caption><p><thead id="thead_2EB020D418544902BEF54E04282A88AE"> 
+	 <tr id="row_C6EB017A60C34E5298CE6A043A6DAD87"> 
+		<td colname="col1" id="entry_5B5C01ECA1E7438E92CE47CE805F49FE">Stakeholder 
+		</td> 
+		<td colname="col2" id="entry_43E071C230A0455F88F7F88A27EAED96">Application 
+		</td> 
+	 </tr></thead> 
+  <tbody id="tbody_D1C6A27EC58640369BE914777E6F3A03"> 
+	 <tr id="row_BB80720F3F354660B9754973F7F69339"> 
+		<td id="entry_91DBDED375CC4EFC9F1CAD4A0AFAFFDD">Model supplier 
+		</td> 
+		<td id="entry_A01160F65D7E4FF5B3916D349F143131">The RP provides the
+		  possibility to demonstrate that a simulation model is fit for purpose within a
+		  stated usage.
+		</td> 
+	 </tr> 
+	 <tr id="row_CD16B74797F641D298F2909258854D5A"> 
+		<td id="entry_A8ED67DA18F34277A10AC72420E88721">Re-useable component
+		  model supplier 
+		</td> 
+		<td id="entry_3DE2837CF5304DA79A8B191941CE1427">The RP provides a
+		  means to advocate usage of trusted component models in larger simulation
+		  models. 
+		</td> 
+	 </tr> 
+	 <tr id="row_A2E80AD20A1348D5BC5FC9229D37A072"> 
+		<td id="entry_48711EA60F3C4BAFA7F7A357BE1FF84E">Model user 
+		</td> 
+		<td id="entry_DC2C5476BA3F42BD93D132D96EC56A0D">The RP provides the
+		  possibility to ask for quality assurance based on a recognized regime. 
+		</td> 
+	 </tr> 
+	 <tr id="row_A8D39F453F0745DDB599AFF2C016C249"> 
+		<td id="entry_16B250DE6D4B48738969F4380A35B476">Authorities 
+		</td> 
+		<td id="entry_5B5018ABB1F54954836A3822DF5D2824">The RP makes it easier
+		  to incorporate simulation model-based demonstrations into the approval process.
+		  
+		</td> 
+	 </tr> 
+	 <tr id="row_5450BFA43AC64CC99FA7F23D0666FDD3"> 
+		<td id="entry_CF55E4EC99CE4DDAB386D1511773341E">Assurance provider 
+		</td> 
+		<td id="entry_4B2B5BFC183A451184E33D1F59ED64B1">The RP defines an
+		  assurance case together with the related claims to be used for the assurance of
+		  simulation models.
+		</td> 
+	 </tr> 
+  </tbody> 
+</p></table><p id="p_A6D267F60874459983693480742E13E5">Based on the general applicability
+  of simulation models, assurance of simulation models is relevant in relation
+  with verification and advisory services in basically all business areas. Due to
+  the differing schemes of system approval in various business areas (e.g.
+  classification in the maritime area and European/US approval of medical
+  equipment), these dedicated schemes shall
+  be
+  taken into account when applying the RP in a new business area.
+</p> 
+<b id="b_0F4689802E594507B48B2BDDE7610E39">Mandatory</b> 
+  <ul type="dash" id="unorderedlist_1E0AF85D2B804A7E8BFA40C304B3C9A6">
+  <li id="listitem_C6F6E241552848368249A2B310BC1CA6"> To which objects,
+  personnel, organizations and/or operations the document applies.</li> 
+  <li id="listitem_686F906898D04CE38F9202808574654E"> 
+  <p id="p_D5E224C2F4B744309908292D9DF302BB"> For which DNV GL services/class
+	 notations, etc., this document is applicable, make a list if needed. 
+  </p> </li> <li id="listitem_26D199AF751C42A5AB3ED233CE5538A9">Remember: 
+  <ul type="dash" id="unorderedlist_9EF0D1852FEB42AC9FC03FA4811E0056">
+  <li id="listitem_BD71110B3DE54A068CE798F9D6356D35"> explain how the
+  document shall be applied</li> 
+  <li id="listitem_BD028E0A78964591B15C3B6214C4636F"> if relevant, state
+  for who/what the document is required.</li> </ul> </li> 
+  <li id="listitem_73FDC68859814D6AA71FC846F33CDCFB"> Are there cases where
+  the complete document, or special circumstances where only a part of the
+  document is applicable, and cases where it is not applicable?</li>
+  </ul> 
+</section><h2 id="subsec1_9F2C167A69544929993B5332FF8D6B6D">1.5. References</h2><section><b id="b_86AF48D82C75400EB2784735E99B3A32">Mandatory</b> 
+  <ul type="dash" id="unorderedlist_BAB997F6EACA4C6E920197E5520133AD">
+  <li id="listitem_229D268B22D6499993B231B921E97781">Normative references
+  that shall be read in context with or are indispensable for the application of
+  the document.</li> 
+  <li id="listitem_919FEECAB9DC41ABB8D42BB717A683B5">These may preferably
+  be listed in a table and referred to by acronyms.</li> 
+  <li id="listitem_141CEA22DA7E4E5EA5B3731A599AE39B">Distinguish between
+  DNV GL and external references.</li> 
+  <li id="listitem_8D325A138E18409B95D194808A6ED66E">Informative references
+  should typically be included in bibliography.</li> </ul> 
+<p id="p_99E10BDE23F14CA5B7DFCE1993FA48B6">DNV documents related to this
+  document are listed in 
+  <a href="#table_544B52CF28C44A34BEBE1AC6647E8370" id="xref_FDE6D83CB6DB43D1A6739D6BEE8479C1">Table 1-2</a>. A note on how the
+  documents are related to this RP has been added to each of them. 
+</p>
+<table id="table_544B52CF28C44A34BEBE1AC6647E8370" frame="border" rules="all"><caption>Table 1-2 DNV GL documents</caption><p><thead id="thead_F2BA635E7A994136B8FC0DDE6AFB3C5E"> 
+	 <tr id="row_25A9050754B546718E2B7F1D945ADCEE"> 
+		<td colname="col1" id="entry_FCB917538F954DBE8B43735619FBB457">Document code 
+		</td> 
+		<td colname="col2" id="entry_58E08517A2EF4ECBA08EFFB73B6461E5">Title 
+		</td> 
+	 </tr> 
+  </thead> 
+  <tbody id="tbody_400D12F7C7BF463AAEC1BD2403C53B69"> 
+	 <tr id="row_CA237FA4CD8E4DC78734E87E6E4901C1"> 
+		<td id="entry_4126EA28D3C744DFB04397297F8CA2E2"><div href="38FAF0C30FC04CF7A47AC8B2E99A255E" id="xref_8AD2EC33652B461B83277E7FF4E95DF4">DNVGL-RP-A203</div>
+		</td> 
+		<td id="entry_7FE988183C5A4193A375015AE3AF2E0E">Technology
+		  Qualification. DNV GL Recommended Practice. 2019 
+		  <p id="p_CE6EBDBEC45042D392C5D745ACCC0F60">Technology qualification
+			 represents one important usage area of simulation models. 
+		  </p> 
+		</td> 
+	 </tr> 
+	 <tr id="row_67BD168F62864D50B2BB532B0AF60AC5"> 
+		<td id="entry_3A01B7DD849943148F6A0C14761941DE"><div href="C7EF5C706FC24C1EA57055FBD9897D9B" id="xref_28CC3332342A470E9A217F6FEA96BB3E">DNVGL-RP-A204</div>
+		</td> 
+		<td id="entry_0F9E0297F3A1443F80A2194D8E3312EF">Assurance of Digital
+		  Twins . DNV GL Recommended Practice. 2020 
+		  <p id="p_E159A437314E4CA9920F1830BBD67457">Simulation models represent
+			 an important ingredient in digital twins. The RP-A204 refers to this RP with
+			 respect to simulation models. 
+		  </p> 
+		</td> 
+	 </tr> 
+	 <tr id="row_5260164B5F6748C0BBA7E6FAA99431C5"> 
+		<td id="entry_D04010CED3AD46CEA0CDFB6CAB82C657"><div href="8F6346996A88409B810FDE73BC1A3B63" id="xref_FD439DFFD94847CC8020F29BF535BFC7">DNVGL-RP-0497</div>
+		</td> 
+		<td id="entry_862FDDA6A26642BDBA848B8BB36C0788"> Data quality
+		  assessment framework. DNV GL Recommended Practice. 2017-01 
+		  <p id="p_14570105E8CA4CDF83E8CFB66962FD8F">Data quality represents an
+			 important pre-requisite, also for simulation models, where real world data are
+			 used at least for model validation, but data are important also with respect to
+			 other simulation aspects, including the data produced by the simulation runs. 
+		  </p> 
+		</td> 
+	 </tr> 
+	 <tr id="row_A02CD24C6F624DBFA0C6BFB9A7B31826"> 
+		<td id="entry_A26ED07638F741EA9999CA49E2E825A6"><div href="F43EFC0139224CE1A0895DCCECCB8C13" id="xref_05BD5510BEB348E6AE8F4FE89D32DCD6">DNVGL-OS-D203</div>
+		</td> 
+		<td id="entry_B1492A8B06B34AB093FFA432D2EE90E8"> Integrated software
+		  dependent systems (ISDS). DNV GL. 2017-07 
+		  <p id="p_F22AAA901A914C1899C1992E31C1F56A">Software-based component
+			 models need to be developed with the correct quality in mind. OS-D203 is useful
+			 in this respect, but 
+			 should not
+			 be assumed to fully cover the subject. 
+		  </p> 
+		</td> 
+	 </tr> 
+	 <tr id="row_5C6E241C70EC470482CB3D3604697263"> 
+		<td id="entry_9B58D08EB52C4BE487A132FD87877D84"><a href="#repository_1A262779DFDA4DD5A12DF766DB648993" id="xref_7A9F7E4F40724476B24E5554ACB80176">DNVGL-RP-0510</a> 
+		</td> 
+		<td id="entry_80951F16B6DB4F9BB6F5684162852AA8"> Framework for
+		  assurance of data-driven algorithms and models. DNV GL Recommended Practice.
+		  2020-04 
+		  <p id="p_5BB85A4F49C34080AB57CDB8C8F8B8C2">Data-driven algorithms are
+			 models which are not based on first principles, but on experience data. This RP
+			 does not cover such model types and refers to RP-0510 for data-driven
+			 algorithms. 
+		  </p> 
+		</td> 
+	 </tr> 
+	 <tr id="row_9B55CDEE2462436B99AE0221A7166518"> 
+		<td id="entry_49DBBB39D5B346CB81AC0CC37242C72C">Trust-in-AI 
+		</td> 
+		<td id="entry_3C0D2B4CEE9C4C199A62ED221C18811E">Trustworthy industrial
+		  AI systems. Asun Lera et.al. 
+		  <p id="p_D00ED471726046BABFBCF267503E2C94">AI systems are mainly
+			 relevant for within data-driven systems, such that this document is mostly
+			 related to RP-0510. Still, trust is a central point within assurance and
+			 applies therefore also here. 
+		  </p> 
+		</td> 
+	 </tr> 
+	 <tr id="row_1c3401e882aa4a4aae2bfb5e40c9d66d"> 
+		<td id="entry_edc9d8b075a744dabafa646885341723"><div href="33AA78CACDE843B7B019335043512DB5" id="xref_0E3A4F45496A45F3AABB934CBDAFB046">DNVGL-CG-0557</div>
+		</td> 
+		<td id="entry_74c454afcf1a4964bdc1922793faaa61">Data-driven
+		  verification of dynamic positioning systems. DNV GL Recommended Practice. 2020 
+		  <p id="p_E5F5830F7EB34910B409BCC589311C8D">This new class-related
+			 document points also to simulation as a means for novel approaches within ship
+			 classification. 
+		  </p> 
+		</td> 
+	 </tr> 
+  </tbody> 
+</p></table><p id="p_E503FFDA974A4C45B93ED4501F40B23D">External documents used in this
+  document are listed in 
+  <a href="#table_C2F18E58C21543E09B2511CE91740F89" id="xref_C60271B7356B4D50A7CF867DB68B663F">Table 1-3</a>. 
+</p>
+<table id="table_C2F18E58C21543E09B2511CE91740F89" frame="border" rules="all"><caption>Table 1-3 External documents</caption><p><thead id="thead_C631A633F3234BB285B2BB10DD85C325"> 
+	 <tr id="row_2D99F618A38D47BDBEDC53EDED256633"> 
+		<td colname="col1" id="entry_3029B79438394868BEBA914EE7B08836">Document code 
+		</td> 
+		<td colname="col2" id="entry_8DEDBCC3EC9641A78699136336E01E5B">Title 
+		</td> 
+	 </tr> 
+  </thead> 
+  <tbody id="tbody_62B8819ECD7D46DAAF184E7D22A7718A"> 
+	 <tr id="row_EBF815B0937947418D169804E3CCD903"> 
+		<td id="entry_7A93BF0C19864A828339028B059FC622"> IEC 61508 
+		</td> 
+		<td id="entry_CE03EEB4C7A34C94B4AB3AA86BAF050E"> Functional safety of
+		  electrical/electronic/programmable electronic safety-related systems. IEC.
+		  2010. Edition 2.0. 7 parts 
+		</td> 
+	 </tr> 
+	 <tr id="row_3709C9ACC7974910BAD2FCC28B451A24"> 
+		<td id="entry_4EFFC5B0DA0A476B90CA5D760238B557"> ISO 9000 
+		</td> 
+		<td id="entry_0E2A55A0FD034A0B89A4B34C05BEA79D"> Quality management
+		  systems - Fundamentals and vocabulary. ISO. Fourth edition. 2015-09-15 
+		</td> 
+	 </tr> 
+	 <tr id="row_512ADDFF75EA47CE950A92655EE6E3E2"> 
+		<td id="entry_FA8EFDE6F3D04502BB2FC301EF4EBD99">ISO 31000 
+		</td> 
+		<td id="entry_057D57FE86A040BFB5D2091C05B071DA">Risk management -
+		  Guidelines. ISO. 2018 
+		</td> 
+	 </tr> 
+	 <tr id="row_8E1ADF08AB5F496DAA915D12EF5C80B6"> 
+		<td id="entry_97F6C84115FD40A59CD2F603FDFCFA1B">FMI 
+		</td> 
+		<td id="entry_D9C52CA5B3B54AD58C790999D24F274D">FMI - Functional
+		  Mockup Interface. Modellica Association project. Version 2.0.1. 2019-10-31.<url href="https://fmi-standard.org/" id="url_37F132FAD49248BA9D1E6204FE9EBDED">https://fmi-standard.org</url>
+		  
+		</td> 
+	 </tr> 
+	 <tr id="row_049550C8BBB64C129F4FE037BB4FB6B8"> 
+		<td id="entry_14BA6248007241FD96050BF44A1430B5">ISO/IEC/IEEE 24765 
+		</td> 
+		<td id="entry_E18BC2E3B8F74FB1A5358B0E3DB07B4E"> Systems and software
+		  engineering - Vocabulary. 2017 
+		</td> 
+	 </tr> 
+	 <tr id="row_DB3C08A107A24CE4AD971EA7A33B5FE6"> 
+		<td id="entry_DDDD713D7AC44488949DCD293FE5F424"> ISO/IEC 15026-1 
+		</td> 
+		<td id="entry_28EB5C71E4D0413CB6CFAEBDF69A0EDB"> Systems and software
+		  engineering - Systems and software assurance - Part 1: Concepts and vocabulary.
+		  ISO/IEC. 2013 
+		</td> 
+	 </tr> 
+	 <tr id="row_171F8BA654524201B992DF519678CC85"> 
+		<td id="entry_703231017EC443FA8CDE3ABD783AD33E">CMMI 
+		</td> 
+		<td id="entry_5BDA1337FD624DCE80A10067A0C20363"> Capability Maturity
+		  Model Integration
+<url href="https://cmmiinstitute.com/" id="url_4EE91E11AC1D4BE2A8DD4744838729C0">https://cmmiinstitute.com/</url> 
+		</td> 
+	 </tr> 
+	 <tr id="row_C6427373AF344C0BB926BF3153C5ADF2"> 
+		<td id="entry_068AA2F851964BFB949FC6275EB33656">ISO 25010 
+		</td> 
+		<td id="entry_6605AD8B2A9F42ED89C7FFA74E503246"> Systems and software
+		  Quality Requirements and Evaluation (SQuaRE). System and software quality
+		  models. ISO/IEC. First edition. 2011 
+		</td> 
+	 </tr> 
+	 <tr id="row_bbc074cb631042d89669571a3936d208"> 
+		<td id="entry_254cf21b0828446dbbf19d1dca8161fc">IPCC 2010 
+		</td> 
+		<td id="entry_da4fc16633e84d26aff899a4b3689bf1"> Guidance Note for
+		  Lead Authors of the IPCC Fifth Assessment Report on Consistent Treatment of
+		  Uncertainties. IPCC Cross-Working Group. July 2010 
+		</td> 
+	 </tr> 
+	 <tr id="row_d0ed55a3f4584789be77637b9b22ed47"> 
+		<td id="entry_dfd7f05209d6400cb50b1f1ca01b6c5b">OSP Interface
+		  Specification 
+		</td> 
+		<td id="entry_0a74fb16afa64d15a03d9eb27c5346ac">Open Simulation
+		  Platform Interface Specification 1.0. The Open Simulation Platform Consortium.
+		  2020. <url href="https://opensimulationplatform.com/specification/" id="url_5A609447901542DBBA110FEB13F0AEC9">https://opensimulationplatform.com/specification/</url>
+		</td> 
+	 </tr> 
+  </tbody> 
+</p></table></section><h2 id="subsec1_5965335D51EB4F9F9EA7E6EC6D3F7974">1.6. Definitions and
+  abbreviations</h2><section><b id="b_7588B045D1514CCCB394FAEB42871B6F">Mandatory</b> 
+<h3 id="subsec2_4C430A917F7E450DA58EBFC8F4BDFFE6">1.6.1. Definition of verbal
+  forms</h3><section><table id="table_B7B646494C794DAA818964970AC6CB1B" frame="border" rules="all"><caption>Table 1-4 Definition of verbal
+  forms</caption><p><thead id="thead_CA90907B9DEB4CEBB7591FD5113B2D3C"> 
+	 <tr id="row_D39CD0BA367C485DB094A887D622BEDD" valign="top"> 
+		<td colname="col1" id="entry_5852DDE425D44F88A1A7D3B75456DC96">Term 
+		</td> 
+		<td colname="col2" id="entry_3083FA9DE38C44B79BFF08A2BDF17DB6">Description 
+		</td> 
+	 </tr> 
+  </thead> 
+  <tbody id="tbody_44D9BC7A5A104EAA8EBD51D12EDF5C2F"> 
+	 <tr id="row_E09267A07A3544098834B2CBC3217260" valign="top"> 
+		<td id="entry_6FA140161B234B27A2CA89641310A3BB">shall 
+		</td> 
+		<td id="entry_D9DA61308A884DF598AC88BCC0C47B0C">verbal form used to
+		  indicate requirements strictly to be followed in order to conform to the
+		  document 
+		</td> 
+	 </tr> 
+	 <tr id="row_AEECC5598D504E578FFA274B888B7E86" valign="top"> 
+		<td id="entry_52D4FB60E9884CEE9843A8393353079E">should 
+		</td> 
+		<td id="entry_9EF1B15D67E045218A7EE654948BA2DB">verbal form used to
+		  indicate that among several possibilities one is recommended as particularly
+		  suitable, without mentioning or excluding others 
+		</td> 
+	 </tr> 
+	 <tr id="row_5E2425ACCBD046F4AE76D6436A1E799B" valign="top"> 
+		<td id="entry_2E9EDFCFB9A24C8BA7BB8F2EA18CFE41">may 
+		</td> 
+		<td id="entry_79F7C93B60C348849448B0235B3C7E04">verbal form used to
+		  indicate a course of action permissible within the limits of the document 
+		</td> 
+	 </tr> 
+  </tbody> 
+</p></table></section><h3 id="subsec2_4EE903A75AF44167BDA15D9459E6808E">1.6.1. Definition of terms</h3><section><table id="table_60B7637E7CE34F609CE3872910B8A64C" frame="border" rules="all"><caption>Table 1-5 Definition of terms</caption><p><thead id="thead_129539C8D35249D4B9A3A71196BFF375"> 
+	 <tr id="row_882F3FA2B4DF403282A7EB67A175910A" valign="top"> 
+		<td colname="col1" id="entry_513AA05ED26A44639271446B376F7BB0">Term 
+		</td> 
+		<td colname="col2" id="entry_DBFB1C1C5C944A579A7B91DA60059A5E">Definition 
+		</td> 
+	 </tr> 
+  </thead> 
+  <tbody id="tbody_A54FDAB03AA1447FA864C91A06CBC5BB"> 
+	 <tr id="row_7692f23b23924c20a033de5b99121e78" valign="top"> 
+		<td id="entry_c91c081def164306a54dae5fd283dedb">algorithm
+		  
+		</td> 
+		<td id="entry_a397d1948dcd4031bfd11310c812cc8e">set
+		  of well-defined rules for the solution of a problem, or a sequence of
+		  operations for performing a specific task,
+		  see
+		  ISO/IEC/IEEE
+		  24765, 
+		  <a href="#table_C2F18E58C21543E09B2511CE91740F89" id="xref_F85A4F9943E0453884F775B08872BF09">Table 1-3</a>
+		</td> 
+	 </tr> 
+	 <tr id="row_c9b1dd5b41864c4eb157b47d68443550" valign="top"> 
+		<td id="entry_aac59ec28f9849e4bc65fb87fa5c05e7">assessment
+		  
+		</td> 
+		<td id="entry_8cad746858f34241a7c73a7aca1aef33">investigation,
+		  based on evidence, to judge the achievement of criteria (e.g. functional
+		  safety) by the assessed system within its environment (see ISO 9000, 
+		  <a href="#table_C2F18E58C21543E09B2511CE91740F89" id="xref_56C1325111AD41F89F23D9710BE46849">Table 1-3</a>
+		</td> 
+	 </tr> 
+	 <tr id="row_0f2fc9236b11470f9e8adb92e3910795" valign="top"> 
+		<td id="entry_a0a6f893d3c24a04b3e55d5a509bd8e3">assurance
+		  
+		</td> 
+		<td id="entry_04cf0b98e827440ab8ae2674f6c327ab">grounds
+		  for justified confidence that a claim has been or will be achieved,
+		  see
+		  ISO/IEC
+		  15026-1,<a href="#table_C2F18E58C21543E09B2511CE91740F89" id="xref_FA32EF8EF9154657BA0132AEF0F3F183">Table 1-3</a>
+		  <p id="p_74FD5E94BC3440DC8CE1ED740B340F8C">Assurance thus refers to the
+			 provision of justified confidence that a product or process is fit for purpose,
+			 and that it complies with existing safety, environmental, societal or
+			 regulatory requirements. The provision of assurance is always based on credible
+			 and relevant evidence 
+		  </p> 
+		</td> 
+	 </tr> 
+	 <tr id="row_a6208bb037564099a28fd1c1de3ac3e4" valign="top"> 
+		<td id="entry_33db9e4e0e2a4056b97594e7dd7037df">base
+		  case
+		  
+		</td> 
+		<td id="entry_a2a61037797c46d69e68876da07d994c">model
+		  configuration (case)
+which all simulation cases are derived from and which
+		  it shall
+		  be possible to return to from any simulation experiment
+		</td> 
+	 </tr> 
+	 <tr id="row_184a479f72094f879f83d5685e1a0994" valign="top"> 
+		<td id="entry_86afca383ab1402892b65244c7497307">black-box
+		  model 
+		</td> 
+		<td id="entry_2bb9928a59dc42e2a1b690e6d1c63004">device,
+		  system or object for
+		  which the
+		  interface (inputs,
+		  outputs,
+		  transfer characteristics)
+		  is exposed, but the internal
+		  working
+		  (e.g. software code) is
+		  not exposed. Its implementation is 'opaque'
+		  (black). 
+		</td> 
+	 </tr> 
+	 <tr id="row_e8da3e86e11b4dba93d08cd34329cb69" valign="top"> 
+		<td id="entry_2275e568d3e146e28521dc4a5f6bdfaa">case
+		  
+		</td> 
+		<td id="entry_51fedc5507bf4e2d92efa26fdd887b4c">configuration
+		  of a simulation model with a set of parameters covering changes in the system,
+		  new features or as part of a full sensitivity analysis with respect to a set of
+		  parameters
+		  <guidancenote id="guidancenote_0CF1B0659D3A4BDA9A6AD71830B5941A"> 
+		  <p id="p_6A08B79098B4430E91E95C1D33531A54">Other terms like 'scenario'
+			 are used in the literature. Throughout this document the term 'case' shall be
+			 used to denote a given simulation experiment. 
+		  </p></guidancenote>
+
+		</td> 
+	 </tr> 
+	 <tr id="row_18bb4aaa12ae41baba2156b45d09f97b" valign="top"> 
+		<td id="entry_2639690476c44d42be7de3a41ff4e72c">component
+		  model 
+		</td> 
+		<td id="entry_b6d3a36df98f47a0bcd2d84f3679e94f"> denotes
+		  a re-useable modelling entity for usage in system models in as many as
+		  necessary instantiations
+		  <p id="p_90C54161CB934227ADCE62837970BDB2"> Component models are often
+			 black-box models, with an associated design contract, made for re-use in system
+			 models. Component models should be pre-assured 
+		  </p>
+		</td> 
+	 </tr> 
+	 <tr id="row_5bd4b1d6c75249658bbbc3f9be907f72" valign="top"> 
+		<td id="entry_a27b156bc8da4e529739faa46ca34e78">conceptual
+		  model
+		  
+		</td> 
+		<td id="entry_7b8807de91e8497987d9f534b7758a04">
+		  represents the first step of abstracting from the reality towards a
+		  model establishing a sound understanding of the features to be modelled, the
+		  (mathematical) concepts of how to model these features and the high level
+		  architecture of the model,
+		  see (Schlesinger, 1979) and (Kung, 1986), 
+		  <a href="#table_2cfd4d85fe8b4e6f936a4590f59ff0f8" id="xref_3560F4413F9C418795ED4373CC4B6D0E">Table 4-4</a>
+
+		  <p id="p_3595188ADC24480CA62C1A69633F7C59">With respect to simulation
+			 models this includes, but is not limited to identification of appropriate
+			 simulation modelling types, definition of a suitable model hierarchy, initial
+			 assessment of risk, assessment of input data needs and identification of
+			 required results. 
+		  </p>
+		</td> 
+	 </tr> 
+	 <tr id="row_d000e4dd559348ebad5aea4440e090a5" valign="top"> 
+		<td id="entry_9e326be07a9f4b46b0343c8061cf64b2">confidence
+		  level
+		  
+		</td> 
+		<td id="entry_08315a9e80814fa588d28ee993b87a29">required
+		  quality of a model, so that the risk of a wrong decision, based on the model
+		  results, is acceptable
+		  <p id="p_06030C54005F410A810ED914D5F97771">If used in relation with a
+			 component model, the confidence level is the maximum confidence level which the
+			 component supports in a system model, given that the design contract is adhered
+			 to 
+		  </p>
+		</td> 
+	 </tr> 
+	 <tr id="row_97c31836eeb640959be0439a98a3e1b0" valign="top"> 
+		<td id="entry_db82cc624c6a4999a1c1a131a74ab61a">cyber-physical
+		  system
+		</td> 
+		<td id="entry_280d381a94ac4b0e81972e874bc43d24">(CPS)
+		  system in which a mechanism is controlled or monitored
+		  by computer-based algorithms
+		  <p id="p_97DDEA4C918345599B171EA211FE90B2">In cyber-physical systems,
+			 physical and software components are deeply intertwined, able to operate on
+			 different spatial and temporal scales, exhibit multiple and distinct
+			 behavioural modalities, and interact with each other in ways that change with
+			 context. Examples of CPS include smart grid, autonomous vehicles, medical
+			 monitoring, industrial control systems, robotics systems, and automatic pilot
+			 avionics 
+		  </p>
+		</td> 
+	 </tr> 
+	 <tr id="row_9ad792a08b9b44c6953b7cc6ec7f0668" valign="top"> 
+		<td id="entry_12cdb5d8c10745159209dbe0f722f8bd">design
+		  contract
+		  
+		</td> 
+		<td id="entry_fe0cdedd2efa4ab884951eb5696786f2">collection
+		  of critical information about the component or model, including its
+		  purpose/function, interface description, assumptions/limitations and confidence
+		  level.
+		  <p id="p_672FA4D9E5164A01A8EA9D2BF625740B"> The term originates from
+			 software development and &#8216;contract-based design&#8217;, which is later used within
+			 argumentation tools as &#8216;safety contract&#8217;. Here we use design contract, because
+			 the term &#8216;safety&#8217; would be too narrow 
+		  </p>
+		</td> 
+	 </tr> 
+	 <tr id="row_1172081f3cb34053bf709ec03a4731cc" valign="top"> 
+		<td id="entry_99fdf7b3689044c39925774753068fee">digital
+		  asset
+		  
+		</td> 
+		<td id="entry_43fc8ee08d8e4dee8335450ca77b6ace">term
+		  digital assets is often used to refer to something of value that exists in a
+		  digital format,
+		  see
+		  ISO/IEC/IEEE
+		  24765,
+		  
+		  <a href="#table_C2F18E58C21543E09B2511CE91740F89" id="xref_9A2B7009C6E54494BC97DE1B6D1AC17F">Table 1-3</a>.
+		  However, we use the term to convey the increasing use of digital technologies
+		  in all types of assets. We distinguish between two main types of digital
+		  assets: 
+		  <ul type="dash" id="unorderedlist_93A39A11462E485CAB3C5CDBF3FB735E">
+		  <li id="listitem_1EB9BE7CBED243BEB27A4A443115F492"> Cyber-physical
+		  systems, where digital systems are interacting with physical systems and
+		  together comprise one functional unit the behaviour of which at its outer
+		  interfaces is determined by both, physical laws and software.</li> 
+		  <li id="listitem_461498F8085340BAA2B18533244A44EB">Virtual systems, which
+		  are purely digital, like a simulation model or a digital
+		  twin.</li></ul> The digital assets which we are focussed on
+		  with respect to assurance encompass (combinations of) data, models, algorithms,
+		  IoT, sensors and software applications
+		</td> 
+	 </tr> 
+	 <tr id="row_13ef5b89be974646912add6d1e7fca2a" valign="top"> 
+		<td id="entry_0447703cf0794a5a8f7ecb3bceb55def">digital
+		  twin
+		  
+		</td> 
+		<td id="entry_6bae56e71a52406ab3a9b00289c1b22d"> virtual
+		  representation of a system or asset that calculates system states and makes
+		  system information available, through integrated models and data, with the
+		  purpose of providing decision support over its lifecycle, see DNVGL-RP-A204, 
+		  <div href="C7EF5C706FC24C1EA57055FBD9897D9B" id="xref_1B3ED36A40494403AC0C5C6CA9FD57D9">DNVGL-RP-A204</div> 
+		  <p id="p_B0CF9D15742048588AF16EE821492C88">Note that other sources like
+			 <url href="https://en.wikipedia.org/wiki/Digital_twin" id="url_B7171ACB39BA4C368361E3F8E45252AC">wikipedia</url> utilise a even wider
+			 definition and advocate a wide vision for digital twins. How this might evolve
+			 remains to be seen, but simulation models as discussed in this RP play clearly
+			 a major role for digital twins 
+		  </p> 
+		</td>
+	 </tr> 
+	 <tr id="row_a0786496f0d545a68ab7bd764d3d8fb4" valign="top"> 
+		<td id="entry_bcdbab8b41bc457ea744220263a69084">fidelity
+		  
+		</td> 
+		<td id="entry_eebbfe2aa5204e11bd1027144f19c2cb">degree to which a
+		  model reproduces the state, condition, feature or behaviour of reality 
+		</td>
+	 </tr> 
+	 <tr id="row_f539ab2d32e8493c8874c4dbece249d6" valign="top"> 
+		<td id="entry_984a9de88e6b4e64af466af80ec64a33">Functional
+		  Mockup Unit 
+		</td> 
+		<td id="entry_5de4f82f9ecf41d8a55da82ef85b58a2">(FMU) implemented
+		  component model using the FMI standard to interface with the system model, see
+		  FMI, 
+		  <a href="#table_6C398C7BF9454AB78DBE754873A1F9EB" id="xref_0194A8D390F64C469D33D8B6B1C159EB">Table 1-6</a>
+		</td>
+	 </tr> 
+	 <tr id="row_bac7c75e1f7946fc8bd6a92f93370f8d" valign="top"> 
+		<td id="entry_33fd7e6683df48b6ad94f4a313adb58f">grey-box
+		  model 
+		</td> 
+		<td id="entry_8277110a908d492da4d8ba040a8855b4"> (system) models where
+		  the structure and the component interfaces are visible, but the inner structure
+		  of component models is not visible (black-box component models) 
+		</td>
+	 </tr> 
+	 <tr id="row_00618d8889a2404d8379b8e94d59ebe9" valign="top"> 
+		<td id="entry_5d4af5af73864b7b8c736187bb66d660">model
+		  
+		</td> 
+		<td id="entry_e4c047d14b5a4e85b92e82fbbe0c677f">a mathematical or
+		  logical representation of a system of entities, phenomena, or processes, see
+		  FMI, 
+		  <a href="#table_C2F18E58C21543E09B2511CE91740F89" id="xref_A9BFB88EB6604C1B82905012EA0291A6">Table 1-3</a> 
+		</td>
+	 </tr> 
+	 <tr id="row_6B949874DBDD406EA74E1BADEB05B3E0" valign="top"> 
+		<td id="entry_67BFC9A0672944A487C371DBF2D0053A">models
+		  based on first principles 
+		</td> 
+		<td id="entry_DEF8869C25804806B6CE03412915C241">model type trying to
+		  understand and mimic underlying inner mechanisms, thus predicting the model
+		  behaviour in known and unknown situations 
+		</td>
+	 </tr> 
+	 <tr id="row_6B20CF9011BF486BB084A655D5618992" valign="top"> 
+		<td id="entry_C4F2549E0ECE46739383B6715E947E65">models
+		  based on data 
+		</td> 
+		<td id="entry_F3057B4949824EA1B2461CF4A7BC5D57">, or data-driven
+		  models. Model type where observed data is used to predict model behaviour in
+		  known and unknown situations 
+		  <p id="p_5E0EFA41A0B84A17847828F7E34BED34">basically models based on
+			 data are advanced interpolation engines 
+		  </p> 
+		</td>
+	 </tr> 
+	 <tr valign="top" id="row_C692D5EAF82C41CD956E3BE3D8632E40"> 
+		<td id="entry_43113C98423D4ED5B47912EBDFA8E0C0">Open
+		  Simulation Platform
+		</td> 
+		<td id="entry_3740714EA4234B9BBD5F0A2D1DF2D8EA">
+		  open-source industry initiative for co-simulation of maritime
+		  equipment, systems and entire ships, see
+		  <url href="https://opensimulationplatform.com/" keyref="O" id="url_EF26EEE754B349158BEDF95F2EF95AFE">Open Simulation Platform</url>
+		</td> 
+	 </tr> 
+	 <tr id="row_7c3d6ed007374a47bd6416a90244fccf" valign="top"> 
+		<td id="entry_3b76bc2cbde04ee0843b06448c86e2b0">reality
+		  
+		</td> 
+		<td id="entry_82e7e9e4ac1546ebb6e04b80363311b3">system
+		  in the physical domain, which the model mirrors (with respect to the aspects of
+		  interest for a given use case),
+		  see (Schlesinger,
+		  1979),
+		  <a href="#table_2cfd4d85fe8b4e6f936a4590f59ff0f8" id="xref_17DB707E84F248DA9D79229A9A3CE2DD">Table 4-4</a>
+		</td> 
+	 </tr> 
+	 <tr id="row_165a2b95847f4f8885c16e184fed6e8d" valign="top"> 
+		<td id="entry_3489d1f96add448a81a8ca18f3cd3195">risk
+		  
+		</td> 
+		<td id="entry_2cf5a67d338e4a4da6c016be4eabd891">effect
+		  of uncertainty on objectives,
+		  see
+		  ISO
+		  31000, 
+		  <a href="#table_C2F18E58C21543E09B2511CE91740F89" id="xref_2E17514DDFAB45009AAFFEB3D83EDC86">Table 1-3</a>
+		</td> 
+	 </tr> 
+	 <tr id="row_301216e07f6d4ac1bcacd5dbb652f6ed" valign="top"> 
+		<td id="entry_0343fd04623b4691849e84bc72317df8">sensitivity
+		  analysis
+		  
+		</td> 
+		<td id="entry_715f0b5c3d624d0199a79d3b68be01b7">sub-set
+		  of simulation cases, based on a reference case, where selected parameters are
+		  varied in a defined range, with the purpose to quantify the effect a change of
+		  the parameters has on the output variables of a model
+		  <p id="p_28C0E5C3DBA64F18BADF87BB0CC933BF">The parameter variation may
+			 be on a regular grid, a distorted grid through dedicated values, through random
+			 values within the subspace or through search algorithms like latin hypercube
+			 sampling 
+		  </p>
+		</td> 
+	 </tr> 
+	 <tr id="row_bc6caf2d5f6647aa8bae7d9c13188c92" valign="top"> 
+		<td id="entry_40b7d4db17fb43e4bc8c1620cb0c2f5f">sequence
+		  
+		</td> 
+		<td id="entry_88fccf6d935e41fb8f8d516f278886ae">(ordered)
+set of simulation cases which are run in a sequence to
+		  arrive at a final state. 
+		  <p id="p_B0F9693477D74B3A937C0B771B2F98BE">For example, changing the
+			 operational mode of a system may require to successively set parameters,
+			 possibly running the simulation for some time in between 
+		  </p>
+		</td> 
+	 </tr> 
+	 <tr id="row_7C8D24637B3C4B859CD108559E9BD4EE" valign="top"> 
+		<td id="entry_62A97CC3096C4986B34BBDD6D59BB8E9">simulation
+		  
+		</td> 
+		<td id="entry_4880CFE3B38A4ACCA9645DFB068111EE"> approximate imitation of the operation of a process or system that
+		  represents its operation over time,
+		  see
+		  (Banks,
+		  2001),
+		  <a href="#table_2cfd4d85fe8b4e6f936a4590f59ff0f8" id="xref_E50310ADB198497A994EF635E6129CA0">Table 4-4</a>
+		</td> 
+	 </tr> 
+	 <tr id="row_4BF0A6BC443C4CF1989A14F15549F63F" valign="top"> 
+		<td id="entry_C22217823EAC4F3A96455115A6DE906E">submodel
+		  
+		  <p id="p_91E57417D11C481E9CC8F7545C47CC27">subsystem
+			 model 
+		  </p> 
+		</td> 
+		<td id="entry_2A06AA7FECAC47DAA56FB6C31E7300DE">denotes
+		  a subsection of the model and is used for modularization purposes. 
+		  <p id="p_DA4F3DC8395647D2BEEEF98FA1F6C747">Submodels are recommended to
+			 keep the model manageable, both in terms of complexity, testability (submodels
+			 may be tested separately) and visibility (too large models may not be viewed
+			 within one screen). Submodels may be candidates for assured component models if
+			 they shall be re-used 
+		  </p>
+		</td> 
+	 </tr> 
+	 <tr id="row_a8c69913b6ac41a0961bb8f5bee4fb84" valign="top"> 
+		<td id="entry_68f85830f44b49fda4ab19d5afd925d2">test
+		  
+		</td> 
+		<td id="entry_e3446895b9344aec9e19173914a53dfa">activity
+		  in which a system or component is executed under specified conditions, the
+		  results are recorded and an evaluation is made on specific aspects of the
+		  system or component,
+		  see
+		  ISO/IEC/IEEE
+		  24765, 
+		  <a href="#table_C2F18E58C21543E09B2511CE91740F89" id="xref_661126B82A384EF9A606AF462B2CD79D">Table 1-3</a>.
+		  
+		  <p id="p_97C9B4DFF2854999BD0F2C90E54DE870"> With respect to simulation
+			 models
+			 that means that simulation test cases are prepared, the results are recorded,
+			 and an evaluation is made to assert that results meet expectations, i.e. are in
+			 accordance with the conceptual model (i.e. verification) or the reality (i.e.
+			 validation). Expected results shall be defined before the test case is actually
+			 run, i.e. following a test-driven development regime
+		  </p> 
+		</td> 
+	 </tr> 
+	 <tr id="row_A525558A3AFA4866ADDB478540B5D23A" valign="top"> 
+		<td id="entry_6618B31EEF8347A983AFDBCDE7AC65FC">(modelling)
+		  variability 
+		</td> 
+		<td id="entry_8636B3C602E44D24BAF54E834AAACADA"> 
+		  <p id="p_CC83D5D444774C61B200E344930EBFC5">usage
+			 of a full-featured programming language like C to design a component model is
+			 called full variability modelling, while any restriction represents a
+			 limitation in variability
+		  </p> 
+		  <p id="p_45165C18F72B403FA820AFD0AEA60FAE">In especial, the usage of a
+			 pre-assured component model where only a few parameters are exposed in the user
+			 interface is called limited variability modelling
+		  </p> 
+		</td> 
+	 </tr> 
+	 <tr id="row_f6f426c0ca874d23b6ad90597bb1d4ab" valign="top"> 
+		<td id="entry_293cd1ab5caf4fac95019398897e2ea4">validation
+		  
+		</td> 
+		<td id="entry_7461a75856dd4ef697938c34d1508a8d">confirmation,
+		  through the provision of objective evidence, that the requirements for a
+		  specific use or application have been fulfilled,
+		  see
+		  ISO/IEC/IEEE
+		  24765, 
+		  <a href="#table_C2F18E58C21543E09B2511CE91740F89" id="xref_44C51C4D31FD4C079DDBCF3DA5775914">Table 1-3</a>
+		</td> 
+	 </tr> 
+	 <tr id="row_8bd1fa7c2ae94423a3ab35fbc4590967" valign="top"> 
+		<td id="entry_73da7a41956941d896b1dda3dbd38967">verification
+		  
+		</td> 
+		<td id="entry_2468504927f04d29996986cb2e396767">confirmation,
+		  through the provision of objective evidence, that specified requirements have
+		  been fulfilled,
+		  see
+		  ISO/IEC/IEEE
+		  24765, 
+		  <a href="#table_C2F18E58C21543E09B2511CE91740F89" id="xref_F12FC346A0A442AD80CF5DFF34BA1C77">Table 1-3</a>
+		</td> 
+	 </tr> 
+  </tbody> 
+</p></table></section><h3 id="subsec2_31AB2B146CA1400FBA504CD3E79C786D">1.6.1. Abbreviations</h3><section><p id="p_9FC6F1B8706C474EA25258556C3C33BF"> 
+</p> 
+<table id="table_6C398C7BF9454AB78DBE754873A1F9EB" frame="border" rules="all"><caption>Table 1-6 Abbreviations</caption><p><thead id="thead_77F4054AB6B14D9E8EE1202630064718"> 
+	 <tr id="row_21780BA8FE5A4BD29F403B7FE9D2F60A"> 
+		<td colname="col1" id="entry_9555382C7A364EE6BBD491B52A348A2C">Abbreviation 
+		</td> 
+		<td colname="col2" id="entry_49317963F36F44468CB780E2CB8E6A03">Description 
+		</td> 
+	 </tr> 
+  </thead> 
+  <tbody id="tbody_F740D8D17499464786E2382A7851FC7A"> 
+	 <tr id="row_4a17e123a5b74ad79c1448996af34722"> 
+		<td id="entry_4bda791b1f1247cc9dc68f801fe7ddc6">C 
+		</td> 
+		<td id="entry_0d867653fc7f44edbb315ac61e7e2053">
+		  programming language 
+		</td> 
+	 </tr> 
+	 <tr id="row_ea2f4a98d6fd4dea8e5875ed8c5443c2"> 
+		<td id="entry_55d65eea9bbf4ed59b1e5bc518c81452">CFD 
+		</td> 
+		<td id="entry_1225b29d16054b838b982ff5bfa47a66">computational
+		  fluid
+		  dynamics
+		  
+		</td> 
+	 </tr> 
+	 <tr id="row_779f16cf509c43269546f36fc426ec80"> 
+		<td id="entry_9f3b7f9040d54df2bc5b736af0621562">CL 
+		</td> 
+		<td id="entry_16622a3e284543d1bad11796de0cea3d">confidence
+		  level
+		  
+		</td> 
+	 </tr> 
+	 <tr id="row_DA6E596DB0944DAD90852EB1BE24F77A"> 
+		<td id="entry_3A35FA0A359E4E29A46D6003ECE5A93E">CPS 
+		</td> 
+		<td id="entry_85679787632942F5AF75E0E1F6DDCF93">cyber-physical
+		  system
+		  
+		</td> 
+	 </tr> 
+	 <tr id="row_9ebec5db1cab435a863d7e748cd437f5"> 
+		<td id="entry_301a5345dd2d4c3a8f01887a57561f65">FMI 
+		</td> 
+		<td id="entry_708bd5c4b0c64d3bbe931f431e19e8b7">functional
+		  mockup
+		  interface
+		  
+		</td> 
+	 </tr> 
+	 <tr id="row_a3ef21844325459ab72605f51997ca55"> 
+		<td id="entry_65e896945a1c42689b13b2ddf4b1e320">FMU 
+		</td> 
+		<td id="entry_f43326c0790a4febae8625dc5ed26d10">functional
+		  mockup
+		  unit
+		</td> 
+	 </tr> 
+	 <tr id="row_0768d0bb46b14afd875aa5e3619aef53"> 
+		<td id="entry_4ce834c02a8445ee988b36e8767e66c5">KPI 
+		</td> 
+		<td id="entry_e8e3efc808824da08c29c502914b55eb">key
+		  performance
+		  indicator
+		  
+		</td> 
+	 </tr> 
+	 <tr id="row_c2d17a5b7b144834aa431f37c3f40c80"> 
+		<td id="entry_c5397e04187b484295d68fd54b43aa8e">ML 
+		</td> 
+		<td id="entry_3fb1bfe0526b49dda0a70a2cfe679ddf">maturity
+		  level
+		  
+		</td> 
+	 </tr> 
+	 <tr id="row_1ae859880e4f451aa1829a65878293ff"> 
+		<td id="entry_b6a9a3d9452241ecb41297877d8870d5">OSP 
+		</td> 
+		<td id="entry_fe225c8de5194bd290941d9c2a0e59c7">open
+		  simulation
+		  platform
+		</td> 
+	 </tr> 
+	 <tr id="row_7441cba8b3094e089024774495cbe36b"> 
+		<td id="entry_78fdd66ad90243c39fe2b7f0bd8c0a68">PLC 
+		</td> 
+		<td id="entry_a1f79311f1424d57ad3f7bcfb40b92b6">programmable
+		  logic
+		  controller
+		  
+		</td> 
+	 </tr> 
+	 <tr id="row_2fae97a9bb89497fbe114b576edf33ce"> 
+		<td id="entry_6ebbe98519d04cb089ce4037e5cac375">RP 
+		</td> 
+		<td id="entry_31b35d8c062d471ca0ecc7a4d0f4c885">recommended
+		  practice
+		  
+		</td> 
+	 </tr> 
+	 <tr id="row_0757C92A607D4400B367ED14F3D7A50A"> 
+		<td id="entry_1E367F43462C4C6499951555F3977D3A">UUID 
+		</td> 
+		<td id="entry_564162A092A84EBBAB599A5F973B687B"> universally
+		  unique
+		  identifier
+		  
+		</td> 
+	 </tr> 
+	 <tr id="row_1805AFB450C04CE98C3A61689DC681EE"> 
+		<td id="entry_D47D4ABC4BE3453D86B4148A2FD2978C">V&amp;V
+		</td> 
+		<td id="entry_68F1C9DEE15D4F559E0BEC69977903A2">verification
+		  and validation
+		</td> 
+	 </tr> 
+  </tbody> 
+</p></table></section></section><h1 id="sectionstart_7B1C132A1BB248EEA3985AAB0B8FD3E2">2. Concepts and terminology</h1><section><h2 id="subsec1_6a52bb666d604c409a60d16ec29b0f95">2.1. Reality, conceptual model
+  and simulation model</h2><section><p id="p_EF20A7BA72494E86AE2172347C187512">Simulation models map selected
+  aspects of reality into the digital world, for a given usage and for stated
+  users. In order to assure
+  this
+  mapping,
+  it
+  is necessary to establish a conceptual model as a first step of abstracting
+  from the reality towards a model. The conceptual model shall establish a sound
+  understanding of the features to be modelled, the (mathematical) concepts of
+  how to model these features and the high-level architecture of the model. Only
+  then it is possible to construct the digital asset of the simulation model. All
+  three elements, the reality, the conceptual model and the simulation model are
+  important and are essential to be included in the assurance of a simulation
+  model, providing trust in the model and the predictions it makes about the
+  reality in a specific use case. This relationship between reality, the
+  conceptual model and the simulation model is shown in 
+  <a href="#figuregroup_A6CB979E50144F83B81E797A8B631A37" id="xref_F35AF323F9204B95AE6C9C91611C9E1A">Figure 2-1</a>, together with the
+  general assurance activities, denoted as qualification, verification and
+  validation. 
+</p> <img src="images/1190300773B148FFAAC7D30EA5F173FD_fig.Reality_Concept_Model_.svg" alt=" Relationship between&#10;  reality, conceptual model and simulation model, together with verification and&#10;  validation activities. Based on (Schlesinger,&#10;  1979), see &#10;  " id="figuregroup_A6CB979E50144F83B81E797A8B631A37"> Relationship between
+  reality, conceptual model and simulation model, together with verification and
+  validation activities. Based on (Schlesinger,
+  1979), see 
+  <a href="#table_2cfd4d85fe8b4e6f936a4590f59ff0f8" id="xref_5219102B68D74965A8E95DE482606071">Table 4-4</a></img><p id="p_11AE685F3FFD4D13B625A0EA1C11FF46"> Assurance of a simulation model
+  calls for conceptual model qualification towards the reality, verification of
+  the simulation model towards the conceptual model and validation of the
+  simulation model towards the reality. For example, only performing model
+  verification will cut both bonds towards reality and leaves the modeller with a
+  (verified) abstract model, not useable for trustworthy decision support. If
+  simulation models are used over time, the procedure becomes iterative in many
+  ways, due to for example new knowledge becoming available, changed model usages
+  or changes in the reality. The assurance process shall
+  accommodate that. 
+</p> 
+</section></body></html>
